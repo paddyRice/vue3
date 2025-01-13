@@ -2,7 +2,7 @@
             <button @click="gobang">扫光</button>
 </template>
 <script setup lang="ts">
-import { reactive } from 'vue';
+// import { reactive } from 'vue';
 import { useRouter } from "vue-router";
 const router = useRouter()
 // let funList = reactive([
