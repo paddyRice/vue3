@@ -4,27 +4,47 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('@/views/Home.vue')
+    component: () => import('@/views/HomeView.vue')
+  },
+  {
+    path: '/articles',
+    name: 'Articles',
+    component: () => import('@/views/articles/ArticleList.vue')
+  },
+  {
+    path: '/articles/:id',
+    name: 'ArticleDetail',
+    component: () => import('@/views/articles/ArticleDetail.vue')
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: () => import('@/views/gallery/GalleryList.vue')
+  },
+  {
+    path: '/gallery/:id',
+    name: 'GalleryDetail',
+    component: () => import('@/views/gallery/GalleryDetail.vue')
+  },
+  {
+    path: '/tech',
+    name: 'Tech',
+    component: () => import('@/views/TechView.vue')
+  },
+  {
+    path: '/dome',
+    name: 'Dome',
+    component: () => import('@/views/dome/DomeList.vue')
+  },
+  {
+    path: '/dome/:slug',
+    name: 'DomeDetail',
+    component: () => import('@/views/dome/demos/DomeDemoHost.vue')
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('@/views/About.vue')
-  },
-  {
-    path: '/products',
-    name: 'Products',
-    component: () => import('@/views/Products.vue')
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import('@/views/Contact.vue')
-  },
-  {
-    path: '/profile',
-    name: 'Profile',
-    component: () => import('@/views/Profile.vue')
+    component: () => import('@/views/AboutView.vue')
   }
 ]
 

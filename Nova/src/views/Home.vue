@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <!-- 导航栏 -->
-    <nav class="navbar">
+    <!-- <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo" @click="navigateTo('Home')">
           <h1>Nova</h1>
@@ -16,7 +16,7 @@
           <el-icon><Menu /></el-icon>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- 主视觉区域 -->
     <section class="hero-section">
